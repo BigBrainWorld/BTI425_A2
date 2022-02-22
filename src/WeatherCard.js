@@ -18,7 +18,7 @@ export default function WeatherCard(props) {
                         onClick={props.viewedCity ? e => props.viewedCity(props.city) : console.log(props.city)}
                     >
                         <Typography>
-                            <img height="20" src={"http://openweathermap.org/images/flags/" + props.city.sys.country.toLowerCase() + ".png"} alt={props.city.sys.country}></img>
+                            <img height="20" src={"https://openweathermap.org/images/flags/" + props.city.sys.country.toLowerCase() + ".png"} alt={props.city.sys.country}></img>
                             &nbsp;&nbsp;{props.city.name}, {props.city.sys.country} <br />
                             Feels like {props.city.main.feels_like}&deg;C, {props.city.weather[0].description}<br />
                         </Typography>
