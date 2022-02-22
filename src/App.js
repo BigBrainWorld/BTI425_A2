@@ -26,7 +26,7 @@ export default function App() {
     function handleOnSubmit(e){
         e.preventDefault();
 
-        fetch(`http://api.openweathermap.org/data/2.5/find?q=${input.current.value}&units=metric&cnt=10&appid=809451e65a102c2763a8babb499713df`)
+        fetch(`https://api.openweathermap.org/data/2.5/find?q=${input.current.value}&units=metric&cnt=10&appid=809451e65a102c2763a8babb499713df`)
         .then(response => response.json())
         .then(res => {
 

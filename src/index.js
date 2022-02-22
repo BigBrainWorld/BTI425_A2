@@ -7,7 +7,7 @@
 * Name: Philippe Cormier 
 * Student ID: 119160208
 * Date: 02/22/2022
-* Heroku Link: ???
+* Heroku Link: https://sdds-bti425-a2.herokuapp.com/
 *
 ********************************************************************************/
 

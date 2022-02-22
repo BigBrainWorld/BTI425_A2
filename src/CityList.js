@@ -41,7 +41,7 @@ export default function CityList(props){
             <ReactPaginate 
                 previousLabel={"<"} 
                 nextLabel={">"} 
-                pageCount={Math.ceil(props.cities.length / citiesPerPage)}
+                pageCount={Math.ceil((props.cities ? props.cities.length / citiesPerPage : 0))}
                 onPageChange={changePage}
                 containerClassName={"pageButtons"}
                 previousLinkClassName={"previousButton"}
