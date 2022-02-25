@@ -13,7 +13,7 @@ export default function HomeCity(){
         const latitude  = position.coords.latitude;
         const longitude = position.coords.longitude;
     
-        fetch(`http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=809451e65a102c2763a8babb499713df`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=809451e65a102c2763a8babb499713df`)
         .then(response => response.json())
         .then(res => {
             setHome(res);
